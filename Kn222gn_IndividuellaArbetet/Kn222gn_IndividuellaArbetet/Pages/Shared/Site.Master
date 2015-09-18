@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Kn222gn_IndividuellaArbetet.Pages.Shared.Site" ViewStateMode="Disabled" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+<%--    <link href="../../Css/Style.css" rel="stylesheet" />--%>
+    <link href="../../Css/Css.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>K Wonderland Besökar Registrering</h1>
+
+        <asp:HyperLink ID="HyperLink1" runat="server" 
+            CssClass="BiggerBAder"
+            Text="Besökare" 
+            NavigateUrl='<%$ RouteUrl:routename=BesokareSida %>'  />
+        <asp:HyperLink ID="HyperLink2" runat="server" 
+            CssClass="BiggerBAder"
+            Text="Information" 
+            NavigateUrl='<%$ RouteUrl:routename=Information %>'  />
+        <asp:HyperLink ID="HyperLink3" runat="server" 
+            CssClass="BiggerBAder"
+            Text="Privilegie" 
+            NavigateUrl='<%$ RouteUrl:routename=PrivilegieSida %>'  />
+        <asp:ContentPlaceHolder ID="SuccessMesage" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
